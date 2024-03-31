@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Trails</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: black;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: black;
+            background-image: url('images/background.jpg');/* Add your image URL here */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgba(248, 249, 250, 0.8); /* Adjust the alpha value (0.8 in this case) to change transparency */
+            opacity: 0.8;
+        }
+
+        .hero h1 {
+            color: white; /* Choose your desired color */
+        }
+        .hero p {
+            color: white; /* Choose your desired color */
+        }
+        /* Change color of the "About Us" heading */
+        #about h2 {
+            color: #ff6600; /* Choose your desired color */
+        }
+
+        /* Change color of the content inside the "About Us" section */
+        #about p {
+            color: white; /* Choose your desired color */
+        }
+        /* Change color of the heading "Our Projects" */
+        #projects h2 {
+            color: #ff6600; /* Choose your desired color */
+        }
+        div p {
+    color: white;
+}
+body {
+    font-family: 'Open Sans', Arial, sans-serif; /* Change 'Open Sans' to your preferred font */
+    /* Other CSS styles */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Pacifico', cursive; /* Change 'Pacifico' to your preferred font for headings */
+    /* Additional styles for headings if needed */
+}
+
+p {
+    font-family: 'Roboto', sans-serif; /* Change 'Roboto' to your preferred font for paragraphs */
+    /* Additional styles for paragraphs if needed */
+}
+
+
+
+/* Example CSS for making content inside subheadings more eye-catching */
+h2, h3, h4, h5, h6 {
+    /* Add your preferred font-family */
+    font-weight: bold; /* Make the font bold */
+    font-size: 1.7em; /* Increase the font size */
+    color: #333; /* Set the color */
+    /* Add any other styles as needed */
+}
+
+p {
+    /* Add your preferred font-family */
+    font-size: 1em; /* Adjust font size if needed */
+    color: #666; /* Set the color */
+    /* Add any other styles as needed */
+}
+
+
+
+/* Change color of the content inside the carousel boxes */
+#projects .card-title,
+#projects .card-text {
+    color: black;
+}
+.card-text {
+    color: black;
+}
+
+/* Example CSS for changing the color and font of the label "Name" */
+label[for="reviewName"],label[for="reviewEmail"],
+label[for="reviewMessage"] {
+    color: white; /* Set the color to orange */
+    font-family: 'Pacifico', cursive; /* Set the font family */
+    /* Add any other styles as needed */
+}
+        .navbar {
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            font-size: 24px;
+        }
+
+        .phone-icon {
+            color: blue;
+            cursor: pointer;
+        }
+        /* Carousel custom styles */
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(1); /* Invert icon color */
+        }
+
+        .carousel-control-prev {
+            left: -5%; /* Adjust the left position */
+        }
+
+        .carousel-control-next {
+            right: -5%; /* Adjust the right position */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"> <img src="images/logo.jpg" alt="Logo" width="50" height="50"> Tasty Trails</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#connect">Connect</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container text-center">
+            <h1>Welcome to Tasty Trails</h1>
+            <p><i>Your ultimate destination for delicious recipes</i></p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container"><br>
+            <h2>About Us</h2>
+            <p>We are passionate about food and love sharing our favorite recipes with the world. Our mission is to
+                inspire people to cook delicious and nutritious meals at home.</p>
+            <p>At Foodie Delight, we believe that cooking should be enjoyable and accessible to everyone. Whether you're
+                a seasoned
+                chef or just starting out in the kitchen, our recipes are designed to be easy to follow and adaptable to
+                your taste
+                preferences. We strive to bring you a diverse range of recipes from various cuisines, including
+                traditional favorites and
+                innovative creations. From quick and simple weekday meals to elaborate dishes for special occasions,
+                we've got
+                something for every palate and occasion. <br> In addition to recipes, we also provide helpful tips,
+                techniques, and guides to enhance your cooking skills and
+                knowledge. We're here to support you on your culinary journey and help you discover the joy of cooking
+                at home.</p>
+            <p>Join us in our mission to spread the love of good food and make every meal a memorable experience!</p>
+            <br><br>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Our Projects</h2>
+            <div><p>Check out some of our mouth-watering recipes:</p></div>
+            <!-- Carousel -->
+            <div id="recipeCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/chole-bhature-chick-pea-curry-600nw-1072270610.webp"
+                                        class="card-img-top" alt="Chole Bhature">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chole Bhature</h5>
+                                        <p class="card-text">Delicious and spicy Punjabi dish with fluffy fried bread
+                                            and
+                                            tangy chickpea curry.</p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#choleBhatureModal">View Recipe</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/Dal-Makhani.jpg" class="card-img-top" alt="Dal Makhani">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dal Makhani</h5>
+                                        <p class="card-text">Creamy and flavorful lentil dish cooked with butter and
+                                            cream,
+                                            perfect for any occasion.</p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#dalMakhaniModal">View Recipe</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/dosa.jpg" class="card-img-top" alt="Dosa">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dosa</h5>
+                                        <p class="card-text">Traditional South Indian crepe made from fermented rice and
+                                            lentil batter, served with chutney and sambar.</p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#dosaModal">View Recipe</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/Idli-Sambhar.jpg" class="card-img-top" alt="Idli Sambhar">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Idli Sambhar</h5>
+                                        <p class="card-text">Traditional South Indian breakfast consisting of soft rice
+                                            cakes served with savory lentil stew and coconut chutney.</p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#idliSambharModal">View Recipe</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/kanda-poha-recipe.jpg" class="card-img-top" alt="Kanda Poha">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Kanda Poha</h5>
+                                        <p class="card-text">A savory Indian breakfast made from flattened rice flakes
+                                            cooked with onions, green chilies, and spices.</p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#kandaPohaModal">View Recipe</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/2au1mv18_upma_625x300_10_March_21.webp" class="card-img-top"
+                                        alt="Upma">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Upma</h5>
+                                        <p class="card-text">A popular South Indian breakfast dish made from semolina
+                                            and
+                                            vegetables, seasoned with spices and herbs.</p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#upmaModal">View Recipe</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/69111af01e9114ea805c5fa4821c6a70_Khaman_Dhokla_Plating.jpg"
+                                        class="card-img-top" alt="Khaman Dhokla">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Khaman Dhokla</h5>
+                                        <p class="card-text">A soft and spongy Gujarati snack made from fermented gram
+                                            flour
+                                            batter, steamed and then tempered with spices.</p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#khamanDhoklaModal">View Recipe</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/m3fmi7ift2.webp" class="card-img-top" alt="Fafda Jalebi">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Fafda Jalebi</h5>
+                                        <p class="card-text">A popular Gujarati street food combo featuring crispy gram
+                                            flour snacks (fafda) served with sweet, syrupy jalebi.</p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#fafdaJalebiModal">View Recipe</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/ff75422b53f60e10642b1df6e54f943d_Khandvi_with_sprouts_filling_Plating.jpg"
+                                        class="card-img-top" alt="Khandvi">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Khandvi</h5>
+                                        <p class="card-text">A popular Gujarati snack made from gram flour and yogurt,
+                                            rolled into bite-sized pieces and seasoned with mustard seeds and curry
+                                            leaves.
+                                        </p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#khandviModal">View Recipe</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/Shahi-Paneer-1.jpg" class="card-img-top" alt="Shahi Paneer">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Shahi Paneer</h5>
+                                        <p class="card-text">A rich and creamy North Indian dish made from paneer
+                                            (Indian
+                                            cottage cheese) cooked in a tomato-based gravy with cream and spices.</p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#shahiPaneerModal">View Recipe</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/Rajma-Chawal--1300x867.jpg" class="card-img-top"
+                                        alt="Rajma Chawal">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Rajma Chawal</h5>
+                                        <p class="card-text">A classic North Indian comfort food featuring red kidney
+                                            beans
+                                            cooked in a thick, flavorful gravy, served with steamed rice.</p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#rajmaChawalModal">View Recipe</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="images/tadka-dal-with-roti-FT-RECIPE0121-8543a4864b454dfab2f8cdc5b72c7c5f.jpg"
+                                        class="card-img-top" alt="Tadka Dal">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tadka Dal</h5>
+                                        <p class="card-text">A flavorful Indian lentil dish made from cooked pigeon peas
+                                            tempered with spices like cumin, mustard seeds, and asafoetida.</p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#tadkaDalModal">View Recipe</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more slides here -->
+                </div>
+                <!-- Controls -->
+                <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <div class="container"><br><br>
+            <h2 style="color: #ff6600">Customer Reviews</h2>
+            <p>Here's what our customers are saying about us:</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Delicious Recipes!</h5>
+                            <p class="card-text">I love the recipes on this website. They are easy to follow and always
+                                turn out delicious!</p>
+                            <p class="card-text"><small class="text-muted">- John Doe</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Highly Recommend!</h5>
+                            <p class="card-text">The recipes are amazing and the website is easy to navigate. Highly
+                                recommend to all food lovers!</p>
+                            <p class="card-text"><small class="text-muted">- Jane Smith</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <h4><a href="#write-review" style="color: #ff6600;">Add Your Review</a></h4>
+
+            <form id="write-review" style="display:none;">
+                <div class="form-group">
+                    <label for="reviewName">Name</label>
+                    <input type="text" class="form-control" id="reviewName" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="reviewEmail">Email</label>
+                    <input type="email" class="form-control" id="reviewEmail" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="reviewMessage">Your Review</label>
+                    <textarea class="form-control" id="reviewMessage" rows="3"
+                        placeholder="Write your review here"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-secondary">Clear</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Connect Section -->
+    <section id="connect">
+        <div class="container text-center"><br><br>
+            <h2 style="color: #ff6600">Connect with Us</h2>
+            <p>Connect with us on social media:</p>
+            <div class="social-icons">
+                <a href="https://github.com/kandpaladiti" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/aditii09/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <span class="phone-icon" onclick="showContactInfo()"><i class="fas fa-phone-alt"></i></span>
+            </div>
+            <p id="contactInfo" style="display:none;">Contact Number: 1234567890<br>Name: Aditi Kandpal<br>Email:
+                aditi.kandpal2003@gmail.com</p>
+        </div>
+    </section>
+
+    <!-- Modal for Recipe -->
+    <div class="modal fade" id="recipeModal" tabindex="-1" role="dialog" aria-labelledby="recipeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="recipeModalLabel">Recipe</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Recipe content goes here -->
+                    <p>This is the recipe for the selected food item.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Chole Bhature Recipe -->
+    <div class="modal fade" id="choleBhatureModal" tabindex="-1" role="dialog" aria-labelledby="choleBhatureModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="choleBhatureModalLabel">Chole Bhature Recipe</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Chole Bhature Recipe Content -->
+                    <p>Delicious and spicy Punjabi dish with fluffy fried bread and tangy chickpea curry.</p>
+                    <p><strong>Ingredients:</strong></p>
+                    <ul>
+                        <li>1 cup dried chickpeas (kabuli chana), soaked overnight</li>
+                        <li>2 onions, finely chopped</li>
+                        <li>2 tomatoes, finely chopped</li>
+                        <li>2 green chilies, slit lengthwise</li>
+                        <li>1 inch ginger, grated</li>
+                        <li>4-5 cloves garlic, minced</li>
+                        <li>1 teaspoon cumin seeds</li>
+                        <li>1 teaspoon coriander powder</li>
+                        <li>1 teaspoon garam masala</li>
+                        <li>1 teaspoon turmeric powder</li>
+                        <li>Salt to taste</li>
+                        <li>Fresh coriander leaves for garnish</li>
+                        <!-- Add more ingredients if necessary -->
+                    </ul>
+                    <p><strong>Instructions:</strong></p>
+                    <ol>
+                        <li>Pressure cook soaked chickpeas with salt until soft.</li>
+                        <li>In a pan, heat oil and add cumin seeds. Add onions, ginger, garlic, and green chilies. Saute
+                            until golden brown.</li>
+                        <li>Add tomatoes and cook until they soften. Add spices and cooked chickpeas. Cook for 10-15
+                            minutes.</li>
+                        <li>For Bhature, mix all-purpose flour, semolina, yogurt, sugar, baking powder, and salt. Knead into
+                            a soft dough.</li>
+                        <li>Divide dough into small balls and roll out into circles. Deep fry in hot oil until golden brown.
+                        </li>
+                        <li>Serve hot Chole with Bhature, garnished with fresh coriander leaves.</li>
+                        <!-- Add more instructions if necessary -->
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Dal Makhani Recipe -->
+    <div class="modal fade" id="dalMakhaniModal" tabindex="-1" role="dialog" aria-labelledby="dalMakhaniModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="dalMakhaniModalLabel">Dal Makhani Recipe</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Dal Makhani Recipe Content -->
+                    <p>Creamy and flavorful lentil dish cooked with butter and cream, perfect for any occasion.</p>
+                    <p><strong>Ingredients:</strong></p>
+                    <ul>
+                        <li>1 cup whole black lentils (sabut urad dal)</li>
+                        <li>1/4 cup red kidney beans (rajma)</li>
+                        <li>2 onions, finely chopped</li>
+                        <li>2 tomatoes, pureed</li>
+                        <li>2 green chilies, slit lengthwise</li>
+                        <li>1 inch ginger, grated</li>
+                        <li>4-5 cloves garlic, minced</li>
+                        <li>1 teaspoon cumin seeds</li>
+                        <li>1 teaspoon red chili powder</li>
+                        <li>1 teaspoon turmeric powder</li>
+                        <li>1 teaspoon garam masala</li>
+                        <li>1/4 cup cream</li>
+                        <li>Salt to taste</li>
+                        <li>Fresh coriander leaves for garnish</li>
+                        <!-- Add more ingredients if necessary -->
+                    </ul>
+                    <p><strong>Instructions:</strong></p>
+                    <ol>
+                        <li>Soak black lentils and kidney beans overnight. Pressure cook until soft.</li>
+                        <li>In a pan, heat oil and add cumin seeds. Add onions, ginger, garlic, and green chilies. Saute
+                            until golden brown.</li>
+                        <li>Add tomato puree and cook until oil separates. Add spices and cooked lentils.</li>
+                        <li>Simmer on low heat for 20-30 minutes. Add cream and garnish with fresh coriander leaves before
+                            serving.</li>
+                        <!-- Add more instructions if necessary -->
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal for Dosa Recipe -->
+    <div class="modal fade" id="dosaModal" tabindex="-1" role="dialog" aria-labelledby="dosaModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="dosaModalLabel">Dosa Recipe</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Dosa Recipe Content -->
+                    <p>Traditional South Indian crepe made from fermented rice and lentil batter, served with chutney and
+                        sambar.</p>
+                    <p><strong>Ingredients:</strong></p>
+                    <ul>
+                        <li>1 cup rice</li>
+                        <li>1/2 cup urad dal (black gram lentils)</li>
+                        <li>1/4 teaspoon fenugreek seeds</li>
+                        <li>Salt to taste</li>
+                        <!-- Add more ingredients if necessary -->
+                    </ul>
+                    <p><strong>Instructions:</strong></p>
+                    <ol>
+                        <li>Soak rice, urad dal, and fenugreek seeds separately for 6 hours.</li>
+                        <li>Grind soaked rice and dal separately into a smooth batter. Mix both batters, add salt, and
+                            ferment overnight.</li>
+                        <li>Heat a non-stick pan, pour a ladleful of batter, spread into a circle, and drizzle oil.</li>
+                        <li>Cook until golden brown on both sides. Serve hot with coconut chutney and sambar.</li>
+                        <!-- Add more instructions if necessary -->
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Idli Sambhar Recipe -->
+    <div class="modal fade" id="idliSambharModal" tabindex="-1" role="dialog" aria-labelledby="idliSambharModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="idliSambharModalLabel">Idli Sambhar Recipe</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Idli Sambhar Recipe Content -->
+                    <p>Classic South Indian breakfast dish consisting of steamed rice cakes (idli) served with a flavorful
+                        lentil-based curry (sambhar).</p>
+                    <p><strong>Ingredients:</strong></p>
+                    <ul>
+                        <li>For Idli:</li>
+                        <li>1 cup idli rice</li>
+                        <li>1/2 cup urad dal (black gram lentils)</li>
+                        <li>Salt to taste</li>
+                        <li>For Sambhar:</li>
+                        <li>1 cup toor dal (split pigeon peas)</li>
+                        <li>1 onion, chopped</li>
+                        <li>2 tomatoes, chopped</li>
+                        <li>1 carrot, chopped</li>
+                        <li>1 potato, diced</li>
+                        <li>1/2 cup mixed vegetables (beans, peas, etc.)</li>
+                        <li>2 tablespoons sambhar powder</li>
+                        <li>1 teaspoon tamarind paste</li>
+                        <li>1 teaspoon mustard seeds</li>
+                        <li>1 teaspoon cumin seeds</li>
+                        <li>A pinch of asafoetida</li>
+                        <li>Salt to taste</li>
+                        <li>Fresh coriander leaves for garnish</li>
+                    </ul>
+                    <p><strong>Instructions:</strong></p>
+                    <ol>
+                        <li>Soak idli rice and urad dal separately for 4-6 hours. Grind into a smooth batter, mix, and
+                            ferment overnight.</li>
+                        <li>Steam idlis in idli molds until done.</li>
+                        <li>For Sambhar, pressure cook toor dal until soft. In a pan, heat oil, add mustard seeds, cumin
+                            seeds, onions, and tomatoes. Cook until soft.</li>
+                        <li>Add mixed vegetables, sambhar powder, tamarind paste, and cooked dal. Simmer for 15-20 minutes.
+                        </li>
+                        <li>Season with salt and garnish with fresh coriander leaves. Serve hot with idlis.</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Kanda Poha Recipe -->
+    <div class="modal fade" id="kandaPohaModal" tabindex="-1" role="dialog" aria-labelledby="kandaPohaModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="kandaPohaModalLabel">Kanda Poha Recipe</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Kanda Poha Recipe Content -->
+                    <p>Popular Maharashtrian breakfast dish made with flattened rice, onions, and spices.</p>
+                    <p><strong>Ingredients:</strong></p>
+                    <ul>
+                        <li>2 cups flattened rice (poha)</li>
+                        <li>1 onion, finely chopped</li>
+                        <li>1 potato, diced</li>
+                        <li>2 green chilies, chopped</li>
+                        <li>1/2 teaspoon mustard seeds</li>
+                        <li>1/2 teaspoon turmeric powder</li>
+                        <li>1/4 cup peanuts</li>
+                        <li>A few curry leaves</li>
+                        <li>Salt to taste</li>
+                        <li>Fresh coriander leaves for garnish</li>
+                    </ul>
+                    <p><strong>Instructions:</strong></p>
+                    <ol>
+                        <li>Rinse poha in water and drain. Keep aside.</li>
+                        <li>In a pan, heat oil, add mustard seeds, curry leaves, onions, and green chilies. Saute until
+                            onions turn translucent.</li>
+                        <li>Add diced potatoes, turmeric powder, and salt. Cook until potatoes are soft.</li>
+                        <li>Add rinsed poha and mix well. Cook for a few minutes until heated through.</li>
+                        <li>Garnish with fresh coriander leaves and serve hot.</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Upma Recipe -->
+    <div class="modal fade" id="upmaModal" tabindex="-1" role="dialog" aria-labelledby="upmaModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="upmaModalLabel">Upma Recipe</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Upma Recipe Content -->
+                    <p>Traditional South Indian dish made from semolina, vegetables, and spices.</p>
+                    <p><strong>Ingredients:</strong></p>
+                    <ul>
+                        <li>1 cup semolina (sooji/rava)</li>
+                        <li>1 onion, finely chopped</li>
+                        <li>1 tomato, finely chopped</li>
+                        <li>1 carrot, grated</li>
+                        <li>1/4 cup green peas</li>
+                        <li>2-3 green chilies, finely chopped</li>
+                        <li>1-inch piece of ginger, grated</li>
+                        <li>1/2 teaspoon mustard seeds</li>
+                        <li>1/2 teaspoon cumin seeds</li>
+                        <li>A pinch of asafoetida (hing)</li>
+                        <li>1 tablespoon oil</li>
+                        <li>Salt to taste</li>
+                        <li>Fresh coriander leaves for garnish</li>
+                    </ul>
+                    <p><strong>Instructions:</strong></p>
+                    <ol>
+                        <li>Dry roast semolina until lightly golden. Keep aside.</li>
+                        <li>In a pan, heat oil, add mustard seeds, cumin seeds, and asafoetida. Let them splutter.</li>
+                        <li>Add chopped onions, green chilies, and grated ginger. Saute until onions turn translucent.</li>
+                        <li>Add chopped tomatoes, grated carrot, and green peas. Cook until vegetables are slightly soft.
+                        </li>
+                        <li>Add roasted semolina and mix well. Add salt and water (2 cups for 1 cup of semolina).</li>
+                        <li>Cook covered on low heat until the upma is cooked and water is absorbed.</li>
+                        <li>Garnish with fresh coriander leaves and serve hot.</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Khaman Dhokla Recipe -->
+    <div class="modal fade" id="khamanDhoklaModal" tabindex="-1" role="dialog" aria-labelledby="khamanDhoklaModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="khamanDhoklaModalLabel">Khaman Dhokla Recipe</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Khaman Dhokla Recipe Content -->
+                    <p>Popular Gujarati steamed savory cake made from gram flour (besan).</p>
+                    <p><strong>Ingredients:</strong></p>
+                    <ul>
+                        <li>1 cup gram flour (besan)</li>
+                        <li>1/4 cup yogurt</li>
+                        <li>1/2 cup water</li>
+                        <li>1 tablespoon oil</li>
+                        <li>1 teaspoon ginger-green chili paste</li>
+                        <li>1 teaspoon sugar</li>
+                        <li>1 teaspoon fruit salt (eno)</li>
+                        <li>Salt to taste</li>
+                        <li>For Tempering:</li>
+                        <li>2 tablespoons oil</li>
+                        <li>1 teaspoon mustard seeds</li>
+                        <li>1 teaspoon sesame seeds</li>
+                        <li>A few curry leaves</li>
+                        <li>2 green chilies, slit</li>
+                        <li>A pinch of asafoetida (hing)</li>
+                        <li>2 tablespoons chopped coriander leaves</li>
+                    </ul>
+                    <p><strong>Instructions:</strong></p>
+                    <ol>
+                        <li>In a bowl, mix gram flour, yogurt, water, oil, ginger-green chili paste, sugar, and salt to make
+                            a smooth batter.</li>
+                        <li>Grease a steaming plate and pour the batter into it. Steam for 15-20 minutes until cooked
+                            through.</li>
+                        <li>Once cooked, remove from heat and let it cool slightly.</li>
+                        <li>Cut into pieces and prepare the tempering. Heat oil in a pan, add mustard seeds, sesame seeds,
+                            curry leaves, green chilies, and asafoetida. Let them splutter.</li>
+                        <li>Pour the tempering over the dhokla pieces. Garnish with chopped coriander leaves.</li>
+                        <li>Serve warm with green chutney.</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Fafda Jalebi Recipe -->
+    <div class="modal fade" id="fafdaJalebiModal" tabindex="-1" role="dialog" aria-labelledby="fafdaJalebiModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="fafdaJalebiModalLabel">Fafda Jalebi Recipe</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Fafda Jalebi Recipe Content -->
+                    <p><strong>Ingredients for Fafda:</strong></p>
+                    <ul>
+                        <li>2 cups besan (gram flour)</li>
+                        <li>1/4 teaspoon turmeric powder</li>
+                        <li>1/4 teaspoon asafoetida (hing)</li>
+                        <li>1 teaspoon carom seeds (ajwain)</li>
+                        <li>Salt to taste</li>
+                        <li>Water as needed</li>
+                    </ul>
+                    <p><strong>Ingredients for Jalebi:</strong></p>
+                    <ul>
+                        <li>1 cup all-purpose flour (maida)</li>
+                        <li>2 tablespoons cornflour</li>
+                        <li>1/4 teaspoon baking powder</li>
+                        <li>A pinch of orange food color (optional)</li>
+                        <li>1 cup sugar</li>
+                        <li>1/2 cup water</li>
+                        <li>1/4 teaspoon saffron strands</li>
+                        <li>Oil for frying</li>
+                    </ul>
+                    <p><strong>Instructions:</strong></p>
+                    <ol>
+                        <li>For Fafda: Mix besan, turmeric powder, asafoetida, carom seeds, and salt in a bowl. Add water
+                            gradually to make a smooth dough. Rest the dough for 15-20 minutes. Roll out thin strips of
+                            dough and fry until golden brown.</li>
+                        <li>For Jalebi: Mix all-purpose flour, cornflour, baking powder, and orange food color (if using).
+                            Add water gradually to make a smooth batter. Rest the batter for 15-20 minutes. Fill it in a
+                            piping bag.</li>
+                        <li>For the sugar syrup, heat sugar and water in a pan until it reaches a one-string consistency.
+                            Add saffron strands.</li>
+                        <li>Heat oil in a pan. Squeeze the batter in a circular motion into the hot oil to form jalebis. Fry
+                            until they turn crisp and golden.</li>
+                        <li>Dip the fried jalebis in the warm sugar syrup for a few seconds and then remove.</li>
+                        <li>Serve the crispy Fafda with sweet, syrupy Jalebis.</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Khandvi Recipe -->
+    <div class="modal fade" id="khandviModal" tabindex="-1" role="dialog" aria-labelledby="khandviModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="khandviModalLabel">Khandvi Recipe</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Khandvi Recipe Content -->
+                    <p><strong>Ingredients:</strong></p>
+                    <ul>
+                        <li>1 cup gram flour (besan)</li>
+                        <li>1 cup yogurt</li>
+                        <li>1 1/2 cups water</li>
+                        <li>1/2 teaspoon turmeric powder</li>
+                        <li>Salt to taste</li>
+                        <li><strong>For Tempering:</strong></li>
+                        <li>2 tablespoons oil</li>
+                        <li>1 teaspoon mustard seeds</li>
+                        <li>1 teaspoon sesame seeds</li>
+                        <li>A pinch of asafoetida (hing)</li>
+                        <li>2-3 green chilies, slit</li>
+                        <li>Few curry leaves</li>
+                        <li>2 tablespoons chopped coriander leaves</li>
+                    </ul>
+                    <p><strong>Instructions:</strong></p>
+                    <ol>
+                        <li>Mix gram flour, yogurt, water, turmeric powder, and salt in a bowl to form a smooth batter.</li>
+                        <li>Pour the batter into a non-stick pan and cook on low heat, stirring continuously until it
+                            thickens.</li>
+                        <li>Quickly spread a thin layer of the batter onto a greased surface before it sets. Let it cool
+                            slightly.</li>
+                        <li>Once cooled, cut the spread into thin strips and roll them tightly.</li>
+                        <li>Arrange the rolled Khandvi pieces on a plate.</li>
+                        <li>For tempering, heat oil in a pan, add mustard seeds, sesame seeds, asafoetida, green chilies,
+                            and curry leaves. Pour this tempering over the arranged Khandvi pieces.</li>
+                        <li>Garnish with chopped coriander leaves.</li>
+                        <li>Serve Khandvi with green chutney or sweet chutney.</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Shahi Paneer Recipe -->
+    <div class="modal fade" id="shahiPaneerModal" tabindex="-1" role="dialog" aria-labelledby="shahiPaneerModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="shahiPaneerModalLabel">Shahi Paneer Recipe</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Shahi Paneer Recipe Content -->
+                    <p><strong>Ingredients:</strong></p>
+                    <ul>
+                        <li>200g paneer (Indian cottage cheese), cubed</li>
+                        <li>2 onions, finely chopped</li>
+                        <li>2 tomatoes, pureed</li>
+                        <li>1/4 cup cashew nuts, soaked in water</li>
+                        <li>1 tablespoon ginger-garlic paste</li>
+                        <li>1/2 teaspoon cumin seeds</li>
+                        <li>1/2 teaspoon turmeric powder</li>
+                        <li>1 teaspoon red chili powder</li>
+                        <li>1 teaspoon garam masala</li>
+                        <li>1/4 cup cream</li>
+                        <li>2 tablespoons ghee (clarified butter)</li>
+                        <li>Salt to taste</li>
+                        <li>Fresh coriander leaves for garnishing</li>
+                    </ul>
+                    <p><strong>Instructions:</strong></p>
+                    <ol>
+                        <li>Heat ghee in a pan. Add cumin seeds and let them splutter.</li>
+                        <li>Add chopped onions and sauté until golden brown.</li>
+                        <li>Add ginger-garlic paste and sauté until the raw smell disappears.</li>
+                        <li>Add tomato puree and cook until oil separates.</li>
+                        <li>Meanwhile, grind the soaked cashew nuts into a smooth paste.</li>
+                        <li>Add cashew paste to the pan and mix well.</li>
+                        <li>Add turmeric powder, red chili powder, and salt. Cook for 2-3 minutes.</li>
+                        <li>Add paneer cubes and mix gently.</li>
+                        <li>Add cream and garam masala. Simmer for 2-3 minutes.</li>
+                        <li>Garnish with fresh coriander leaves.</li>
+                        <li>Serve hot with naan or rice.</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Rajma Chawal Recipe -->
+    <div class="modal fade" id="rajmaChawalModal" tabindex="-1" role="dialog" aria-labelledby="rajmaChawalModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="rajmaChawalModalLabel">Rajma Chawal Recipe</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Rajma Chawal Recipe Content -->
+                    <p><strong>Ingredients for Rajma:</strong></p>
+                    <ul>
+                        <li>1 cup rajma (red kidney beans), soaked overnight</li>
+                        <li>2 onions, finely chopped</li>
+                        <li>2 tomatoes, pureed</li>
+                        <li>2 green chilies, slit</li>
+                        <li>1 tablespoon ginger-garlic paste</li>
+                        <li>1 teaspoon cumin seeds</li>
+                        <li>1 teaspoon coriander powder</li>
+                        <li>1/2 teaspoon turmeric powder</li>
+                        <li>1 teaspoon red chili powder</li>
+                        <li>1/2 teaspoon garam masala</li>
+                        <li>2 tablespoons oil</li>
+                        <li>Salt to taste</li>
+                        <li><strong>Ingredients for Chawal (Rice):</strong></li>
+                        <li>1 cup basmati rice, washed and soaked for 30 minutes</li>
+                        <li>2 cups water</li>
+                        <li>Salt to taste</li>
+                    </ul>
+                    <p><strong>Instructions:</strong></p>
+                    <ol>
+                        <li>Pressure cook soaked rajma with salt until soft and cooked.</li>
+                        <li>Heat oil in a pan. Add cumin seeds and let them splutter.</li>
+                        <li>Add chopped onions and sauté until golden brown.</li>
+                        <li>Add ginger-garlic paste and sauté until the raw smell disappears.</li>
+                        <li>Add tomato puree, green chilies, coriander powder, turmeric powder, red chili powder, and salt.
+                            Cook until oil separates.</li>
+                        <li>Add cooked rajma along with the water it was cooked in.</li>
+                        <li>Simmer for 10-15 minutes until the flavors are well combined.</li>
+                        <li>For rice, boil water in a pan. Add soaked rice and salt. Cook until the rice is done.</li>
+                        <li>Serve hot rajma with steamed rice.</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Tadka Dal Recipe -->
+    <div class="modal fade" id="tadkaDalModal" tabindex="-1" role="dialog" aria-labelledby="tadkaDalModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tadkaDalModalLabel">Tadka Dal Recipe</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Tadka Dal Recipe Content -->
+                    <p><strong>Ingredients:</strong></p>
+                    <ul>
+                        <li>1 cup pigeon peas (toor dal), washed</li>
+                        <li>1 onion, finely chopped</li>
+                        <li>2 tomatoes, finely chopped</li>
+                        <li>2 green chilies, slit</li>
+                        <li>1 tablespoon ginger-garlic paste</li>
+                        <li>1/2 teaspoon cumin seeds</li>
+                        <li>1/2 teaspoon mustard seeds</li>
+                        <li>A pinch of asafoetida (hing)</li>
+                        <li>1/2 teaspoon turmeric powder</li>
+                        <li>1 teaspoon red chili powder</li>
+                        <li>1 teaspoon garam masala</li>
+                        <li>2 tablespoons oil</li>
+                        <li>Salt to taste</li>
+                        <li>Fresh coriander leaves for garnishing</li>
+                    </ul>
+                    <p><strong>Instructions:</strong></p>
+                    <ol>
+                        <li>Pressure cook washed toor dal with salt until soft and mushy.</li>
+                        <li>Heat oil in a pan. Add cumin seeds and mustard seeds. Let them splutter.</li>
+                        <li>Add chopped onions and sauté until translucent.</li>
+                        <li>Add ginger-garlic paste and sauté until the raw smell disappears.</li>
+                        <li>Add chopped tomatoes and green chilies. Cook until tomatoes are soft.</li>
+                        <li>Add turmeric powder, red chili powder, and salt. Cook until oil separates.</li>
+                        <li>Add cooked toor dal and mix well. Adjust consistency by adding water if needed.</li>
+                        <li>Simmer for 5-10 minutes. Add garam masala and mix.</li>
+                        <li>Garnish with fresh coriander leaves.</li>
+                        <li>Serve hot with rice or roti.</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Foodie Delight. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function showContactInfo() {
+            var contactInfo = document.getElementById("contactInfo");
+            if (contactInfo.style.display === "none") {
+                contactInfo.style.display = "block";
+            } else {
+                contactInfo.style.display = "none";
+            }
+        }
+        $(document).ready(function () {
+            $('a[href="#write-review"]').click(function () {
+                $("#write-review").toggle();
+                return false;
+            });
+        });
+    </script>
+</body>
+
+</html>
