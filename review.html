@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Form</title>
+    <link rel="stylesheet" href="https://cdn.formbold.com/formbold.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+                /* Custom styles */
+                body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: black;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: black;
+            background-image: url('images/background.jpg');/* Add your image URL here */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgba(248, 249, 250, 0.8); /* Adjust the alpha value (0.8 in this case) to change transparency */
+            opacity: 0.8;
+        }
+
+        .hero h1 {
+            color: white; /* Choose your desired color */
+        }
+        .hero p {
+            color: white; /* Choose your desired color */
+        }
+        /* Change color of the "About Us" heading */
+        #about h2 {
+            color: #ff6600; /* Choose your desired color */
+        }
+
+        /* Change color of the content inside the "About Us" section */
+        #about p {
+            color: white; /* Choose your desired color */
+        }
+        /* Change color of the heading "Our Projects" */
+        #projects h2 {
+            color: #ff6600; /* Choose your desired color */
+        }
+        div p {
+    color: white;
+}
+body {
+    font-family: 'Open Sans', Arial, sans-serif; /* Change 'Open Sans' to your preferred font */
+    /* Other CSS styles */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Pacifico', cursive; /* Change 'Pacifico' to your preferred font for headings */
+    /* Additional styles for headings if needed */
+}
+
+p {
+    font-family: 'Roboto', sans-serif; /* Change 'Roboto' to your preferred font for paragraphs */
+    /* Additional styles for paragraphs if needed */
+}
+
+
+
+/* Example CSS for making content inside subheadings more eye-catching */
+h2, h3, h4, h5, h6 {
+    /* Add your preferred font-family */
+    font-weight: bold; /* Make the font bold */
+    font-size: 1.7em; /* Increase the font size */
+    color: #333; /* Set the color */
+    /* Add any other styles as needed */
+}
+
+p {
+    /* Add your preferred font-family */
+    font-size: 1em; /* Adjust font size if needed */
+    color: #666; /* Set the color */
+    /* Add any other styles as needed */
+}
+
+
+
+/* Change color of the content inside the carousel boxes */
+#projects .card-title,
+#projects .card-text {
+    color: black;
+}
+.card-text {
+    color: black;
+}
+
+/* Example CSS for changing the color and font of the label "Name" */
+label[for="reviewName"],label[for="reviewEmail"],
+label[for="reviewMessage"] {
+    color: white; /* Set the color to orange */
+    font-family: 'Pacifico', cursive; /* Set the font family */
+    /* Add any other styles as needed */
+}
+        .navbar {
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            font-size: 24px;
+        }
+
+        .phone-icon {
+            color: blue;
+            cursor: pointer;
+        }
+        /* Carousel custom styles */
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(1); /* Invert icon color */
+        }
+
+        .carousel-control-prev {
+            left: -5%; /* Adjust the left position */
+        }
+
+        .carousel-control-next {
+            right: -5%; /* Adjust the right position */
+        }
+
+    </style>
+    </style>
+</head>
+
+<body>
+
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"> <img src="images/logo.jpg" alt="Logo" width="50" height="50"> Tasty Trails</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="review.html">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#connect">Connect</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container text-center">
+            <h1>Welcome to Tasty Trails</h1>
+            <p><i>Your ultimate destination for delicious recipes</i></p>
+        </div>
+    </section>
+
+    <div>
+        <br />
+        <div class="formbold-builder-form themeOne">
+            <form enctype="multipart/form-data" action="https://formbold.com/s/3nj7Y" method="POST"
+                class="mx-auto w-full max-w-[570px] rounded-[10px] border border-stroke bg-white p-10 themeOne">
+                <div class="SortableItem fb-builder-item">
+                    <h3 class="static !font-bold text-xl font-semibold leading-tight text-black sm:text-[28px]">
+                        Add your review
+                    </h3>
+                </div>
+                <div class="SortableItem fb-builder-item">
+                    <div class="mb-4">
+                        <label class="mb-2.5 block text-base text-black"><span>Enter your full name</span><span
+                                class="label-required pl-1 text-red-400">*</span></label><input type="text"
+                            class="w-full rounded border border-stroke bg-white px-5 py-3 text-base text-black outline-none focus:border-primary"
+                            name="text_input_E151DBBD-EF14-4730-B89A-13917833BCCA" placeholder="Your name here" value=""
+                            required="" />
+                    </div>
+                </div>
+                <div class="SortableItem fb-builder-item">
+                    <div class="mb-4">
+                        <label class="mb-2.5 block text-base text-black"><span>E-Mail</span><span
+                                class="label-required pl-1 text-red-400">*</span></label><input type="email"
+                            class="w-full rounded border border-stroke bg-white px-5 py-3 text-base text-black outline-none focus:border-primary"
+                            name="email_input_7D33D57E-CA0E-417E-9FB2-C8C11D22654E" placeholder="Enter Email Address"
+                            value="" required="" />
+                    </div>
+                </div>
+                <div class="SortableItem fb-builder-item">
+                    <div class="mb-4">
+                        <label class="mb-2.5 block text-base text-black"><span>Your Review</span><span
+                                class="label-required pl-1 text-red-400">*</span></label><input type="text"
+                            class="w-full rounded border border-stroke bg-white px-5 py-3 text-base text-black outline-none focus:border-primary"
+                            name="text_input_09D699C0-EADC-4247-B18B-46B12D0B973B" placeholder="Write your review here"
+                            value="" required="" />
+                    </div>
+                </div>
+                <div class="SortableItem fb-builder-item">
+                    <div class="mb-4">
+                        <label class="form-label mb-4 text-base text-black"><span>Will you recommend this website to a
+                                    friend</span><span class="label-required pl-1 text-red-400">*</span></label>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="fid_preview_radiobuttons_option_74EBF406-9A23-4575-B97A-384F3026165C"
+                                class="custom-control-input fb-builder-radio sr-only"
+                                name="radiobuttons_7FCC757B-FF9C-483C-8CFB-FC8444DFD07C" type="radio"
+                                value="place_holder_option_1" required="" /><label
+                                class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="fid_preview_radiobuttons_option_74EBF406-9A23-4575-B97A-384F3026165C"><span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke"><span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"></span></span>Yes</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="fid_preview_radiobuttons_option_EDDD95AF-AAB8-4025-8CBD-3FD4ADA6630A"
+                                class="custom-control-input fb-builder-radio sr-only"
+                                name="radiobuttons_7FCC757B-FF9C-483C-8CFB-FC8444DFD07C" type="radio"
+                                value="place_holder_option_2" required="" /><label
+                                class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="fid_preview_radiobuttons_option_EDDD95AF-AAB8-4025-8CBD-3FD4ADA6630A"><span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke"><span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"></span></span>No</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="fid_preview_radiobuttons_option_50DAB976-37E0-4D43-9E4A-D32F44BB17E2"
+                                class="custom-control-input fb-builder-radio sr-only"
+                                name="radiobuttons_7FCC757B-FF9C-483C-8CFB-FC8444DFD07C" type="radio"
+                                value="place_holder_option_3" required="" /><label
+                                class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="fid_preview_radiobuttons_option_50DAB976-37E0-4D43-9E4A-D32F44BB17E2"><span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke"><span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"></span></span>May
+                                be</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-toolbar flex items-center space-x-3">
+                    <input type="submit"
+                        class="inline-flex cursor-pointer items-center justify-center rounded border border-primary bg-primary px-8 py-2 text-base font-medium text-white hover:bg-opacity-90"
+                        value="Submit" />
+                </div>
+            </form>
+            <p class="mt-8 flex items-center justify-center">
+                Powered by<span class="pl-2"><a href="https://formbold.com" rel="nofollow noopener" target="_blank"><img
+                            src="https://cdn.formbold.com/formbold-logo.svg" alt="Formbold Logo"
+                            style="max-width: 100px;" /></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+    <!-- Connect Section -->
+    <section id="connect">
+        <div class="container text-center"><br><br>
+            <h2 style="color: #ff6600">Connect with Us</h2>
+            <p>Connect with us on social media:</p>
+            <div class="social-icons">
+                <a href="https://github.com/kandpaladiti" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/aditii09/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <span class="phone-icon" onclick="showContactInfo()"><i class="fas fa-phone-alt"></i></span>
+            </div>
+            <p id="contactInfo" style="display:none;">Contact Number: 1234567890<br>Name: Aditi Kandpal<br>Email:
+                aditi.kandpal2003@gmail.com</p>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tasty Trails. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
